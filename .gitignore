@@ -1,0 +1,66 @@
+HELP.md
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+src/main/resources/static/
+
+
+### src/main/frontend
+src/main/frontend/dist/
+src/main/frontend/bazel-out
+src/main/frontend/integration/bazel/bazel-*
+src/main/frontend/e2e_test.*
+src/main/frontend/node_modules
+src/main/frontend/tools/gulp-tasks/cldr/cldr-data/
+
+# Include when developing application packages.
+pubspec.lock
+.c9
+.idea/
+.settings/
+.vscode/launch.json
+*.swo
+modules/.settings
+modules/.vscode
+
+# Don't check in secret files
+src/main/frontend/*secret.js
+
+# Ignore npm/yarn debug log
+src/main/frontend/npm-debug.log
+src/main/frontend/yarn-error.log
+
+# build-analytics
+.build-analytics
+
+# rollup-test output
+src/main/frontend/modules/rollup-test/dist/
+
+# User specific bazel settings
+.bazelrc.user
+
+
