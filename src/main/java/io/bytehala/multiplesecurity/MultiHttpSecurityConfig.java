@@ -30,8 +30,9 @@ public class MultiHttpSecurityConfig {
                     .antMatcher("/api/**")
                     .authorizeRequests()
                     .anyRequest().anonymous()
-                    .and()
-                    .httpBasic();
+//                    .and()
+//                    .httpBasic() // what does this do?
+            ;
         }
     }
 
@@ -44,7 +45,11 @@ public class MultiHttpSecurityConfig {
                     .authorizeRequests()
                     .anyRequest().authenticated()
                     .and()
-                    .formLogin();
+//                    .formLogin() // this presents a login and logout page
+//                    .and()
+//                    .logout() // not needed, but this is for getting the default LogoutConfigurer instance
+//                    .deleteCookies("JSESSIONID") // does not work
+            ;
         }
     }
 }
